@@ -22,7 +22,7 @@
   function readFile(fileEntry) {
 
     fileEntry.file(function (file) {
-        var reader = new FileReader();
+        var reader = new FileReader("readme.txt");
 
         reader.onloadend = function() {
             console.log("Successful file read: " + this.result);
